@@ -99,6 +99,7 @@ nav:
   - "About": about.md
 plugins:
   - search
+  - meta
   #- mkdocs-jupyter
   # - git-revision-date
   # - git-revision-date-localized  
