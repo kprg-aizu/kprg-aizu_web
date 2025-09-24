@@ -94,8 +94,10 @@ nav:
   # - 'Blog':
     # - blog/index.md
   - 'Links':
+    - "Our Moments": http://klab-aizu.github.io/moments
     - "Our Internal Site": http://klab-aizu.github.io/
     - "Contact": https://u-aizu.ac.jp/~khanh/contact/
+    - "GitHub": https://github.com/orgs/kprg-aizu/
   - "About": about.md
 plugins:
   - search
