@@ -1,0 +1,166 @@
+site_name: "krpg-aizu"
+
+# index_page: [index.md]
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist
+  - pymdownx.tabbed
+  - meta
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.pathconverter
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true 
+theme: 
+  name: material
+
+  # logo: assets/logo.svg
+  favicon: assets/favicon.png
+  custom_dir: overrides   
+  logo_dark_mode: assets/logo_2025_dark.svg
+  logo_light_mode: assets/logo_2025_light.svg
+  
+  # font: false
+  font:
+    text: "Noto Sans JP"
+    code: "Noto Sans Mono"
+  features:
+    - navigation.tracking
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.sections
+    - toc.follow
+    # - navigation.top
+    - navigation.indexes
+    - navigation.path
+
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: white
+      accent: orange
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      accent: orange
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: orange
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+nav: 
+  - 'Home': 
+    - index.md
+
+  - 'Blog':
+    - blog/index.md
+  - 'Links':
+    - "Our Internal Site": http://klab-aizu.github.io/
+    - "Contact": https://u-aizu.ac.jp/~khanh/contact/
+
+plugins:
+  - search
+  #- mkdocs-jupyter
+  # - git-revision-date
+  # - git-revision-date-localized  
+  # - encryptcontent: 
+  #       placeholder: 'Password'
+  #       placeholder_user: 'User'
+  #       password_button: True
+  #       password_button_text: 'Unlock'
+  #       button_class: 'md-button md-button--primary' # CSS class for password_button
+  #       decryption_failure_message: 'Wrong user name or password.'
+  #       search_index: 'dynamically'
+  #       password_file: 'passwords.yml'
+  #       title_prefix: ''
+  #       summary: '㊙️ This website is password-protected and accessible to authorized members only.'
+  #       remember_keys : True
+  #       remember_password: True
+  #       encrypted_something: 
+  #           mkdocs-encrypted-toc: [nav, class]
+  #           mkdocs-encrypted-footer: [div, id]
+  #           mkdocs-encrypted-footer-meta: [div, id]
+  # - bibtex:
+      # bib_file: "docs/refs.bib"
+  - blog:
+      blog_dir: blog
+      authors: false
+      blog_toc: false
+      archive_name: Archive      
+      archive_date_format: MMMM yyyy
+      archive_url_date_format: yyyy/MM
+      archive_url_format: "archive/{date}"
+      archive_toc: false
+      categories_toc: false
+      categories_name: Categories
+      categories_allowed:
+        - Conference
+        - Graduation
+        - Journal
+        - Travel
+        - News
+        - Interview
+        - Lecture
+        - Exhibition
+        - Undergraduate
+        - Master
+        - PhD
+      pagination_per_page: 5
+      # archive_pagination_per_page: 10
+      categories_pagination_per_page: 10
+  - tags:
+      tags_file: moments/tags.md
+
+
+extra:
+  generator: false
+  # analytics:
+    # provider: google
+    # property: G-479214894
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+copyright: Copyright &copy; 2016 -  klab. All rights reserved unless otherwise stated.  All posts and opinions expressed herein are solely our own and do not represent or reflect the views, positions, or policies of our employer.
