@@ -1,4 +1,4 @@
-site_name: "krpg-aizu"
+site_name: "krpg-aizu: a technical blog"
 
 # index_page: [index.md]
 markdown_extensions:
@@ -47,8 +47,8 @@ theme:
   
   # font: false
   font:
-    text: "Noto Sans JP"
-    code: "Noto Sans Mono"
+    text: "IBM Plex Sans JP"
+    code: "IBM Plex Mono"
   features:
     - navigation.tracking
     # - navigation.tabs
@@ -88,15 +88,15 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 nav: 
-  - 'Home': 
+  - 'Blog':  
     - index.md
 
-  - 'Blog':
-    - blog/index.md
+  # - 'Blog':
+    # - blog/index.md
   - 'Links':
     - "Our Internal Site": http://klab-aizu.github.io/
     - "Contact": https://u-aizu.ac.jp/~khanh/contact/
-
+  - "About": about.md
 plugins:
   - search
   #- mkdocs-jupyter
@@ -122,8 +122,10 @@ plugins:
   # - bibtex:
       # bib_file: "docs/refs.bib"
   - blog:
-      blog_dir: blog
-      authors: false
+      blog_dir: .
+      authors_profiles: true
+
+      # authors: false
       blog_toc: false
       archive_name: Archive      
       archive_date_format: MMMM yyyy
