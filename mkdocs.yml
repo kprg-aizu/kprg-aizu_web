@@ -40,10 +40,13 @@ theme:
   name: material
 
   # logo: assets/logo.svg
-  favicon: assets/favicon.png
+  # favicon: assets/favicon.png
+  favicon: assets/ttc.png
   custom_dir: overrides   
-  logo_dark_mode: assets/logo_2025_dark.svg
-  logo_light_mode: assets/logo_2025_light.svg
+  # logo_dark_mode: assets/logo_2025_dark.svg
+  logo_dark_mode: assets/ttc_dark.svg
+  # logo_light_mode: assets/logo_2025_light.svg
+  logo_light_mode: assets/ttc_light.svg 
   
   # font: false
   font:
@@ -97,7 +100,7 @@ nav:
     - "Our Moments": http://klab-aizu.github.io/moments
     - "Our Internal Site": http://klab-aizu.github.io/
     - "Contact": https://u-aizu.ac.jp/~khanh/contact/
-    - "GitHub": https://github.com/orgs/kprg-aizu/
+    - "GitHub": https://github.com/orgs/the-thinking-circuit
   - "About": about.md
 plugins:
   - search
